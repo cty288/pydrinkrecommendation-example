@@ -54,31 +54,37 @@ def delete_drink():
 def get_recommendation():
   print("Please input the following information: ")
   
-  input_mood = input("Are you happy or tired? (1. Happy, 2. Tired): ")
+  input_mood = input("Are you happy or tired? (1. Happy, 2. Tired; Or input nothing if you don't care about this): ")
   if(input_mood == "1"):
     input_mood = Mood.Happy
   elif (input_mood == "2"):
     input_mood = Mood.Tired
+  elif (input_mood == ""):
+    input_mood = None
   else:
     print("Invalid input!")
     return
   
-  input_taste = input("Do you want a sweet or bitter drink? (1. Sweet, 2. Bitter): ")
+  input_taste = input("Do you want a sweet or bitter drink? (1. Sweet, 2. Bitter; Or input nothing if you don't care about this): ")
   if(input_taste == "1"):
     input_taste = Taste.Sweet
   elif (input_taste == "2"):
     input_taste = Taste.Bitter
+  elif (input_taste == ""):
+    input_taste = None
   else:
     print("Invalid input!")
     return
   
-  price_input = input("What is your price range? (1. Cheap, 2. Medium, 3.High): ")
+  price_input = input("What is your price range? (1. Cheap, 2. Medium, 3.High; Or input nothing if you don't care about this): ")
   if(price_input == "1"):
     price_input = Price.Low
   elif (price_input == "2"):
     price_input = Price.Medium
   elif (price_input == "3"):
     price_input = Price.High
+  elif (price_input == ""):
+    price_input = None
   else:
     print("Invalid input!")
     return
