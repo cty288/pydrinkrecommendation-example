@@ -5,7 +5,7 @@ This project is an example program showing how to use the APIs of `pydrinkrecomm
  
 1. Create a `pipenv`-managed virtual environment and install the latest version of your package installed: 
    ```
-   python3 -m pipenv install -i https://test.pypi.org/simple/pydrinkmanagment
+   python3 -m pipenv install -i https://test.pypi.org/simple/ pydrinkmanagment
    ``` 
    (Note that if you've previously created a `pipenv` virtual environment in the same directory, you may have to delete the old one first. Find out where it is located with the `pipenv --venv` command.)
 2. Activate the virtual environment and enter the virtual environment's shell:
